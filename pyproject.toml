@@ -60,6 +60,18 @@ pytz = ">=2025.1.0"
 tqdm = "^4.67.1"
 uvloop = {version = "^0.21.0", markers = "sys_platform != 'win32'"}
 
+# Web UI dependencies
+fastapi = {version = "^0.104.1", optional = true}
+uvicorn = {version = "^0.24.0", optional = true}
+websockets = {version = "^12.0", optional = true}
+jinja2 = {version = "^3.1.2", optional = true}
+python-multipart = {version = "^0.0.6", optional = true}
+sqlalchemy = {version = "^2.0.23", optional = true}
+alembic = {version = "^1.13.0", optional = true}
+python-jose = {version = "^3.3.0", optional = true}
+passlib = {version = "^1.7.4", optional = true}
+bcrypt = {version = "^4.1.2", optional = true}
+
 betfair_parser = {version = "==0.14.2", optional = true}  # Pinned for stability
 defusedxml = {version = "^0.7.1", optional = true}
 docker = {version = "^7.1.0", optional = true}
@@ -279,3 +291,4 @@ omit = [
 [tool.coverage.report]
 fail_under = 0
 show_missing = true
+
