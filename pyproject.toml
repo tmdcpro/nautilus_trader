@@ -92,7 +92,7 @@ docker = ["docker"]
 dydx = ["v4-proto", "bech32", "ecdsa", "bip-utils", "pycryptodome", "grpcio", "protobuf"]
 ib = ["nautilus_ibapi", "defusedxml"]
 polymarket = ["py-clob-client"]
-webui = ["fastapi", "uvicorn", "websockets", "jinja2", "python-multipart", "sqlalchemy", "alembic", "python-jose", "passlib", "bcrypt"]
+webui = ["fastapi", "uvicorn", "websockets", "jinja2", "python-multipart", "sqlalchemy", "alembic", "python-jose", "passlib", "bcrypt", "psutil"]
 
 [tool.poetry.group.dev]
 optional = true
@@ -293,6 +293,7 @@ omit = [
 [tool.coverage.report]
 fail_under = 0
 show_missing = true
+
 
 
 
