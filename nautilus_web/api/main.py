@@ -96,6 +96,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Include routers
+app.include_router(system.router)
+
 
 # Global exception handlers
 @app.exception_handler(StarletteHTTPException)
@@ -242,4 +245,5 @@ if __name__ == "__main__":
         reload=True,
         log_level="info",
     )
+
 
