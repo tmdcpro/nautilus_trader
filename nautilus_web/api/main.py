@@ -98,6 +98,7 @@ app.add_middleware(
 
 # Include routers
 app.include_router(system.router)
+app.include_router(strategies.router)
 
 
 # Global exception handlers
@@ -245,6 +246,7 @@ if __name__ == "__main__":
         reload=True,
         log_level="info",
     )
+
 
 
 
